@@ -1,9 +1,9 @@
 <?php
-
+namespace Contao;
 // alter palette for use with reCaptcha V3
 $GLOBALS['TL_DCA']['tl_form_field']['config']['onload_callback'][] = function() {
 
-    if( \Config::get('recaptchaType') != 'recaptcha3' ) {
+    if( Config::get('recaptchaType') != 'recaptcha3' ) {
         return;
     }
 
